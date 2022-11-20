@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="nav_logo">
+        <img
+          class="nav_logo"
+          src="https://deepthought.education/assets/images/logo/logo.svg"
+        />
+      </div>
+
+      <div class="nav_icons">
+        <div class="nav_icon1">
+          <img class="nav_icon1_img" src="home.png" />
+        </div>
+        <div class="nav_icon1">
+          <img class="nav_icon1_img" src="tool.png" />
+        </div>
+        <div class="nav_icon1">
+          <img class="nav_icon6_img" src="bell.png" />
+        </div>
+        <div class="nav_icon1">
+          <img class="nav_icon2_img" src="face.png" />
+        </div>
+        <div class="nav_ring">
+          <img src="ring.png" />
+          <img src="ring.png" />
+          <img src="ring.png" />
+        </div>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="main_body">
+        <div class="dropdown" id="dropdownId">
+          <div id="initialDropdown">
+            <a href="#home" class="active"></a>
+          </div>
+
+          <div id="initialLinks">
+            <button id="button_id" type="button">1</button>
+          </div>
+          <div id="finalLinks">
+            <div class="dropdown_content">
+              <h4>1. demo task</h4>
+              <ul>
+                <li>task heading 1</li>
+                <li>task heading 2</li>
+                <li>task heading 3</li>
+                <li>task heading 4</li>
+                <li>task heading 5</li>
+                <li>task heading 6</li>
+                <li>task heading 7</li>
+              </ul>
+            </div>
+          </div>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+        <div class="main_content">
+          <div class="main_content_nav">
+            <div class="main_content_nav_heading">
+              <div class="main_content_nav_heading_div">
+                You Are Taking Challenges of New Project
+              </div>
+            </div>
+          </div>
+
+          <div class="main_content_body">
+            <h4 class="main_content_body_heading">demo task</h4>
+            <div class="main_content_body_content">
+              <div class="first_card_row">
+                <div class="first_card">
+                  <div class="card_nav">Task Heading 1</div>
+                  <div class="card_body" id="first_task_id"></div>
+                </div>
+                <div class="first_card">
+                  <div class="card_nav">Task Heading 2</div>
+                  <div class="card_body">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Eum, cumque aspernatur! Amet similique facere aspernatur
+                    quisquam dolor cumque earum commodi dolore neque assumenda,
+                    laudantium nisi deleniti omnis minima, veritatis
+                    exercitationem!lore, Lorem ipsum, dolor sit amet consectetur
+                    adipisicing elit. Adipisci sit molestiae enim laborum minima
+                    odit ducimus ipsam incidunt repellendus similique aut maxime
+                    ratione, asperiores labore eius impedit maiores sequi
+                    perspiciatis.
+                  </div>
+                </div>
+              </div>
+              <div class="first_card_row">
+                <div class="first_card">
+                  <div class="card_nav">Task Heading 3</div>
+                  <div class="card_body">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Eum, cumque aspernatur! Amet similique facere aspernatur
+                    quisquam dolor cumque earum commodi dolore neque assumenda,
+                    laudantium nisi deleniti omnis minima, veritatis
+                    exercitationem!lore, Lorem ipsum, dolor sit amet consectetur
+                    adipisicing elit. Adipisci sit molestiae enim laborum minima
+                    odit ducimus ipsam incidunt repellendus similique aut maxime
+                    ratione, asperiores labore eius impedit maiores sequi
+                    perspiciatis.
+                  </div>
+                </div>
+                <div class="first_card">
+                  <div class="card_nav">Task Heading 4</div>
+                  <div class="card_body">
+                    <iframe width=288 height=200 src="https://drive.google.com/file/d/1Pxw83bTKE3KkOyYnwm1u6DSVjntSrNTp/preview?usp=sharing"></iframe>
+                  </div>
+                </div>
+              </div>
+              <div class="first_card_row">
+                <div class="first_card">
+                  <div class="card_nav">Task Heading 5</div>
+                  <div class="card_body">
+         
+          
+                  </div>
+                </div>
+                <div class="first_card">
+                  <div class="card_nav">Task Heading 6</div>
+                  <div class="card_body">
+                    <iframe width=288" src="https://drive.google.com/file/d/1dBBYQsz2yt3vc4YMkRmVC3nuTBbq2GON/preview?usp=sharing"></iframe>
+                  </div>
+                </div>
+              </div>
+              <div class="first_card_row">
+                <div class="video_card">
+                  <div class="card_nav">Task Heading 7</div>
+                  <div class="card_body">
+                    <iframe
+                      width=310;
+                      height=101;
+                      src="https://www.youtube.com/embed/s8H0Sx7jy7c"
+                    >
+                    </iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script>
+          function myFunction() {
+            var x = document.getElementById("finalLinks");
+            var y = document.getElementById("initialLinks");
+
+            if (x.style.display === "block") {
+              x.style.display = "none";
+              y.style.display = "block";
+              document.getElementById("dropdownId").style.width = "100px";
+            } else {
+              x.style.display = "block";
+              y.style.display = "none";
+              document.getElementById("dropdownId").style.width = "200px";
+            }
+          }
+        </script>
+        <script>
+          fetch("sample.json")
+            .then((response) => response.json())
+            .then(function (sample) {
+              let placeholder = document.querySelector("#first_task_id");
+              let out = "";
+              out += sample.description;
+              placeholder.innerHTML = out;
+            });
+        </script>
+      </div>
+      <div class="next_button_div">
+        <input class="next_button" type="button" value="Next" />
+      </div>
+    </div>
+  </body>
+</html>
